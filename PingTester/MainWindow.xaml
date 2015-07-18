@@ -1,0 +1,53 @@
+﻿<Window x:Class="PingTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="핑 테스터" Height="380" Width="600" ResizeMode="CanMinimize" Closing="Window_Closing" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="60" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="테스트 대상" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="최소/최대 지연" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="평균 지연" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Margin="5" Content="테스트 시작" x:Name="buttonStart" Click="Button_Click" />
+
+        <TextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" x:Name="comboBoxHost" Margin="5" />
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" x:Name="textBlockMinMax" Text="9999ms / 0ms" Margin="5" />
+        <TextBlock Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" x:Name="textBlockAverage" Text="0ms" Margin="5" />
+        
+        <ListBox Grid.Row="4" Grid.RowSpan="4" Grid.ColumnSpan="2" Margin="5" x:Name="listBoxConsole" FontSize="9" />
+
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="1ms 이하" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="1ms 초과" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="20ms 이상" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="3" Grid.Column="2" Text="50ms 이상" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="4" Grid.Column="2" Text="100ms 이상" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="5" Grid.Column="2" Text="150ms 이상" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="6" Grid.Column="2" Text="200ms 이상" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Grid.Row="7" Grid.Column="2" Text="타임아웃" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5" />
+
+        <TextBlock Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" x:Name="textBlock1msLess" Text="0" Margin="5" />
+        <TextBlock Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" x:Name="textBlock1msOver" Text="0" Margin="5" />
+        <TextBlock Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" x:Name="textBlock10msOver" Text="0" Margin="5" />
+        <TextBlock Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" x:Name="textBlock50msOver" Text="0" Margin="5" />
+        <TextBlock Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" x:Name="textBlock100msOver" Text="0" Margin="5" />
+        <TextBlock Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" x:Name="textBlock200msOver" Text="0" Margin="5" />
+        <TextBlock Grid.Row="6" Grid.Column="3" VerticalAlignment="Center" x:Name="textBlock300msOver" Text="0" Margin="5" />
+        <TextBlock Grid.Row="7" Grid.Column="3" VerticalAlignment="Center" x:Name="textBlockTimeoutCount" Text="0" Margin="5" />
+    </Grid>
+</Window>
