@@ -11,5 +11,12 @@ namespace PingTester
 	/// </summary>
 	public partial class App : Application
 	{
+		public App ()
+		{
+			AppDomain.CurrentDomain.UnhandledException += ( sender, e ) =>
+			{
+				MessageBox.Show ( e.ExceptionObject.ToString () );
+			};
+		}
 	}
 }

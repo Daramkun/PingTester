@@ -7,12 +7,12 @@ using System.Windows;
 // 어셈블리의 일반 정보는 다음 특성 집합을 통해 제어됩니다.
 // 어셈블리와 관련된 정보를 수정하려면
 // 이 특성 값을 변경하십시오.
-[assembly: AssemblyTitle ( "PingTester" )]
+[assembly: AssemblyTitle ( "Ping Tester" )]
 [assembly: AssemblyDescription ( "" )]
 [assembly: AssemblyConfiguration ( "" )]
 [assembly: AssemblyCompany ( "" )]
-[assembly: AssemblyProduct ( "PingTester" )]
-[assembly: AssemblyCopyright ( "Copyright ©  2013" )]
+[assembly: AssemblyProduct ( "Ping Tester" )]
+[assembly: AssemblyCopyright ( "Copyright © 2013-2017 Daramee" )]
 [assembly: AssemblyTrademark ( "" )]
 [assembly: AssemblyCulture ( "" )]
 
@@ -51,5 +51,5 @@ using System.Windows;
 // 모든 값을 지정하거나 아래와 같이 '*'를 사용하여 빌드 번호 및 수정 버전이 자동으로
 // 지정되도록 할 수 있습니다.
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion ( "1.0.0.0" )]
-[assembly: AssemblyFileVersion ( "1.0.0.0" )]
+[assembly: AssemblyVersion ( "1.1.0.0" )]
+[assembly: AssemblyFileVersion ( "1.1.0.0" )]
