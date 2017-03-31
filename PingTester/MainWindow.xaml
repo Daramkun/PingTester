@@ -48,7 +48,7 @@
 
 		<TextBlock Grid.Row="9" Grid.Column="2" Text="총 경과 시간" Style="{StaticResource textBlockStyle}" />
 
-		<Button Grid.Row="3" Grid.ColumnSpan="2" Margin="5" Content="테스트 시작" x:Name="buttonStart" Click="Button_Click" />
+		<Button Grid.Row="3" Grid.ColumnSpan="2" Margin="5" Content="테스트 시작" x:Name="buttonStart" Click="Button_Click" IsDefault="True" />
 
 		<TextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" x:Name="comboBoxHost" Margin="5" />
 		<StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="5" Orientation="Horizontal">
