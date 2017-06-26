@@ -69,7 +69,7 @@ namespace PingTester
 			};
 			tier.Sort ( ( a, b ) => -a.Value.CompareTo ( b.Value ) );
 
-			switch ( tier[0].Key )
+			switch ( tier [ 0 ].Key )
 			{
 				case 0: return "실시간 통신 게임의 호스트가 되어도 무리가 없는 환경으로 보입니다.";
 				case 1: return "실시간 통신을 사용하는 게임을 이용하는데 무리 없는 환경으로 보입니다.";
