@@ -38,14 +38,14 @@ namespace PingTester
 			if ( elapsedTime < new TimeSpan ( 0, 0, 15 ) )
 				return "평가 하기에 충분한 데이터가 쌓이지 않았습니다.";
 
-			c1msLess = c1msLess * 0.080f;
-			c1msOver = c1msOver * 0.090f;
-			c20msOver = c20msOver * 0.110f;
-			c50msOver = c50msOver * 0.130f;
+			c1msLess = c1msLess * 0.060f;
+			c1msOver = c1msOver * 0.080f;
+			c20msOver = c20msOver * 0.090f;
+			c50msOver = c50msOver * 0.120f;
 			c100msOver = c100msOver * 0.130f;
 			c150msOver = c150msOver * 0.140f;
 			c200msOver = c200msOver * 0.150f;
-			timeout = timeout * 0.170f;
+			timeout = timeout * 0.230f;
 
 			float totalCount = c1msLess + c1msOver + c20msOver + c50msOver + c100msOver + c150msOver + c200msOver + timeout;
 			c1msLess = c1msLess / totalCount;
